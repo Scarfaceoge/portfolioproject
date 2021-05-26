@@ -1,7 +1,14 @@
 .jumbotron {
     background-color: #6DCF87;
+    margin:0;
 }
 
 h1 {
     color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 5em
+}
+#divi {
+    position: absolute;
+    left: 300px;
 }
