@@ -26,3 +26,8 @@ h3 {
 .modal-header h3 {
     color: white;
 }
+
+a, a:hover {
+    text-decoration: none;
+}
+
