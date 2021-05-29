@@ -6,9 +6,23 @@
 h1 {
     color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 5em
 }
-#divi {
-    position: absolute;
-    left: 300px;
+
+h3 {
+    font-family: 'Lobster', cursive;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#uploadPrescription {
+    background-color: rgba(109, 207, 135, 0.5);
+}
+
+.modal-header {
+    background-color:#6DCF87;
+}
+
+.modal-header h3 {
+    color: white;
 }
