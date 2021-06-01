@@ -35,3 +35,7 @@ a, a:hover {
     background-color: #E0DEDE
 }
 
+#shop .btn, #shop1 .btn{
+    width: 180px;
+}
+
