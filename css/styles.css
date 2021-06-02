@@ -5,7 +5,7 @@
 
 h1 {
     color: white;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: 'Lobster', cursive;
 }
 
 h3 {
@@ -35,7 +35,5 @@ a, a:hover {
     background-color: #E0DEDE
 }
 
-#shop .btn, #shop1 .btn{
-    width: 180px;
-}
+
 

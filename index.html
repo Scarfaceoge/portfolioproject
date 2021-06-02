@@ -23,12 +23,17 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col col-sm-4 col-md-2" id="logo">
+                <div class="col-sm-2 col-md-2" id="logo">
                     <a href="#"><img src="images/white_logo_transparent_background.png"></a>
                 </div>
 
-                <div class="col-sm-6 align-self-center" id="divi">
+                <div class="col-md-7 align-self-center" id="divi">
                     <h1>Dividend Pharmacy</h1>
+                </div>
+
+                <div class="col col-md-3 align-self-end">
+                    <a href="tel:555-555-5555" class="text-white"><i class="fa fa-phone fa-lg"></i>:555-555-5555</a> </br>
+                    <a href="mailto:dividendpharma@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>:dividendpharma</a>
                 </div>
             </div>
         </div>
@@ -60,6 +65,7 @@
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="row row-content" id="carousel">
             <div class="col col-md-7 mx-auto">
@@ -87,6 +93,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row row-content py-5" id="uploadPrescription">
             <div class="ml-auto mr-5 py-auto text-right text-white">
                 <h3>Send us a copy of your Prescription</h3>
@@ -98,6 +105,7 @@
                 </button>
             </div>
         </div>
+
         <div class="modal fade" id="prescriptionModal" role="dialog">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
@@ -151,60 +159,51 @@
             </div>
         </div>
 
-        <div class="row row-content">
-
-            <!--Shop pouplar categories-->
-            <div class="mx-auto">
-                <h3 class="text-center">Shop popular categories</h3>
-                <div class="my-3" id="shop">
-                    <button class="btn btn-info btn-lg" type="button" value="antiMalarials">
-                        <a href="#" class="text-white">Antimalarials</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="antacids">
-                        <a href="#" class="text-white">Antacids</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="coldFlu">
-                        <a href="#" class="text-white">Cold & Flu</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="supplements">
-                        <a href="#" class="text-white">Supplements</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="probiotics">
-                        <a href="#" class="text-white">Probiotics</a>
-                    </button>
-                </div>
-                <div class="my-3" id="shop1">
-                    <button class="btn btn-info btn-lg" type="button" value="ppe">
-                        <a href="#" class="text-white">PPE</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="babyProducts">
-                        <a href="#" class="text-white">Baby products</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="medicalDevices">
-                        <a href="#" class="text-white">Medical devices</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="creams">
-                        <a href="#" class="text-white">Creams</a>
-                    </button>
-                    <button class="btn btn-info btn-lg" type="button" value="essentialOils">
-                        <a href="#" class="text-white">Essential oils</a>
-                    </button>
-                </div>
-                
-            </div>
-            
+        <!--Shop pouplar categories-->
+        <div class="row row-content mt-5">
+            <h3 class="col text-center">Shop popular categories</h3>
         </div>
-        
-            
-                <!--Search for products-->
-                <form class="row row-content offset-2 mb-3">
-                    <input type="search" class="form-control col-8">
-                    <button type="submit" class="col-2 col-sm-1 btn btn-light">Search</button>
-                </form>
-            
-        
+        <div class="row row-content my-3 " id="shop">
+            <button class="col-md-2 btn btn-info btn-lg offset-md-1" type="button" value="antiMalarials">
+                <a href="#" class="text-white">Antimalarials</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="antacids">
+                <a href="#" class="text-white">Antacids</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="coldFlu">
+                <a href="#" class="text-white">Cold & Flu</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg " type="button" value="supplements">
+                <a href="#" class="text-white">Supplements</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="probiotics">
+                <a href="#" class="text-white">Probiotics</a>
+            </button>
+        </div>
+        <div class="row row-content my-3" id="shop1">
+            <button class="col-md-2 btn btn-info btn-lg offset-md-1" type="button" value="ppe">
+                <a href="#" class="text-white">PPE</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="babyProducts">
+                <a href="#" class="text-white">Baby products</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="medicalDevices">
+                <a href="#" class="text-white">Medical devices</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="creams">
+                <a href="#" class="text-white">Creams</a>
+            </button>
+            <button class="col-md-2 btn btn-info btn-lg" type="button" value="essentialOils">
+                <a href="#" class="text-white">Essential oils</a>
+            </button>
+        </div>
 
-       
+        <!--Search for products-->
+        <form class="row row-content offset-2 mb-5">
+            <input type="search" class="form-control col-8">
+            <button type="submit" class="col-2 col-sm-2 btn btn-light">Search</button>
+        </form>
+
     </div>
 
     <footer class="site-footer py-3 text-muted" id="footer">
