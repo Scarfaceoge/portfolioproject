@@ -11,7 +11,12 @@ h1 {
 h3 {
     font-family: 'Lobster', cursive;
 }
-
+.carousel .btn {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    z-index: 100;
+}
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }

@@ -23,16 +23,17 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2 col-md-2" id="logo">
+                <div class="col-md-2 d-flex justify-content-center justify-content-md-start" id="logo">
                     <a href="#"><img src="images/white_logo_transparent_background.png"></a>
                 </div>
 
-                <div class="col-md-7 align-self-center" id="divi">
+                <div class="col-md-7 align-self-center d-flex justify-content-center justify-content-md-start" id="divi">
                     <h1>Dividend Pharmacy</h1>
                 </div>
 
-                <div class="col col-md-3 align-self-end">
-                    <a href="tel:555-555-5555" class="text-white"><i class="fa fa-phone fa-lg"></i>:555-555-5555</a> </br>
+                <div class="col-md-3 align-self-end d-flex justify-content-center d-md-block">
+                    <a href="tel:555-555-5555" class="text-white"><i class="fa fa-phone"></i>:555-555-5555</a>
+                    </br>
                     <a href="mailto:dividendpharma@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>:dividendpharma</a>
                 </div>
             </div>
@@ -41,7 +42,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dividendNavbar">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dividendNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -70,6 +71,18 @@
         <div class="row row-content" id="carousel">
             <div class="col col-md-7 mx-auto">
                 <div class="carousel slide" data-ride="carousel" id="homeCarousel">
+                    <!--Here lies the invisible pause button that appears when you click any part of the carousel-->
+                    <!--The fa-pause icon changes to fa-play-->
+                    <button class="btn btn-lg btn-light d-none" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="images/store_photo1.jpg" alt="Store photo 1">
@@ -99,13 +112,15 @@
                 <h3>Send us a copy of your Prescription</h3>
                 <p>So we can help you fill the order before you arrive <br>
                     Your prescription will be treated with the utmost confidentiality</p>
+                <!--The button below opens the modal where the patient or healthcare provider can upload their prescriptions-->
                 <button class="btn btn-danger" type="button" id="prescriptionButton" data-toggle="modal"
                     data-target="#prescriptionModal">
                     Upload your Prescription
                 </button>
             </div>
         </div>
-
+        <!--This is the modal that opens when the above button is toggled. From what i understand
+        it's location on the html markup does not matter so long as the data-target attribute on the button above is linked to the id of the modal-->
         <div class="modal fade" id="prescriptionModal" role="dialog">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
@@ -163,7 +178,8 @@
         <div class="row row-content mt-5">
             <h3 class="col text-center">Shop popular categories</h3>
         </div>
-        <div class="row row-content my-3 " id="shop">
+        <!--The Upper products buttons-->
+        <div class="row row-content my-3" id="shop">
             <button class="col-md-2 btn btn-info btn-lg offset-md-1" type="button" value="antiMalarials">
                 <a href="#" class="text-white">Antimalarials</a>
             </button>
@@ -180,9 +196,11 @@
                 <a href="#" class="text-white">Probiotics</a>
             </button>
         </div>
-        <div class="row row-content my-3" id="shop1">
-            <button class="col-md-2 btn btn-info btn-lg offset-md-1" type="button" value="ppe">
-                <a href="#" class="text-white">PPE</a>
+
+        <!--The Lower products buttons-->
+        <div class="row row-content mt-5" id="shop1">
+            <button class="col-md-2 btn btn-info btn-lg offset-md-1" type="button" value="ppes">
+                <a href="#" class="text-white">PPEs</a>
             </button>
             <button class="col-md-2 btn btn-info btn-lg" type="button" value="babyProducts">
                 <a href="#" class="text-white">Baby products</a>
@@ -199,7 +217,7 @@
         </div>
 
         <!--Search for products-->
-        <form class="row row-content offset-2 mb-5">
+        <form class="row row-content offset-2 my-5">
             <input type="search" class="form-control col-8">
             <button type="submit" class="col-2 col-sm-2 btn btn-light">Search</button>
         </form>
@@ -236,15 +254,14 @@
 
         </div>
     </footer>
+    <!--Javascript libraries-->
+    <!--Jquery must come first, then poppers.js, then bootstrap javascript pluggin-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function () {
-            $
-        })
-    </script>
+    
+    <!--Additional script code to be linked-->
+    <script src="js/script.js"></script>
 
 </body>
 
