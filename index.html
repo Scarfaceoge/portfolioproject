@@ -83,12 +83,12 @@
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="#loginEmail"></label>
-                                    <input class="form-control form-control-sm" id="loginEmail"
+                                    <input type="text" class="form-control form-control-sm" id="loginEmail"
                                         placeholder="username or email">
                                 </div>
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="#loginPassword"></label>
-                                    <input class="form-control form-control-sm" id="loginPassword"
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
                                         placeholder="password">
                                 </div>
                                 <div class="col">
@@ -112,7 +112,7 @@
     </div>
 
     <div class="container">
-        <div class="row row-content" id="carousel">
+        <div class="row row-content my-5" id="carousel">
             <div class="col col-md-7 mx-auto">
                 <div class="carousel slide" data-ride="carousel" id="homeCarousel">
                     <!--Here lies the invisible pause button that appears when you click any part of the carousel-->
@@ -189,6 +189,14 @@
                                         <input type="text" class="col-7 form-control" id="uploadLastName">
                                     </div>
                                     <div class="row row-content form-group">
+                                        <label for="#uploadPhone" class="col-5 col-form-label">Phone:</label>
+                                        <input type="tel" class="col-7 form-control" id="uploadPhone">
+                                    </div>
+                                    <div class="row row-content form-group">
+                                        <label for="#uploadEmail" class="col-5 col-form-label">Email:</label>
+                                        <input type="email" class="col-7 form-control" id="uploadEmail">
+                                    </div>
+                                    <div class="row row-content form-group">
                                         <label for="uploadTitle" class="col-form-label col-5">Title</label>
                                         <select placeholder="Select your title" class="col-7 form-control"
                                             id="uploadTitle">
@@ -221,9 +229,9 @@
         <!--Shop pouplar categories-->
         <div class="row row-content mt-5">
             <h3 class="col text-center">Shop popular categories</h3>
-        </div>
+        </div><hr/>
         <!--The Upper products buttons-->
-        <div class="row row-content my-3 justify-content-center" id="shop">
+        <div class="row row-content mt-5 justify-content-center" id="shop">
             <button class="col-md-2 btn btn-info btn-lg mx-1" type="button" value="antiMalarials">
                 <a href="#" class="text-white">Antimalarials</a>
             </button>
@@ -242,7 +250,7 @@
         </div>
 
         <!--The Lower products buttons-->
-        <div class="row row-content mt-5 justify-content-center" id="shop1">
+        <div class="row row-content mt-3 justify-content-center" id="shop1">
             <button class="col-md-2 btn btn-info btn-lg mx-1" type="button" value="ppes">
                 <a href="#" class="text-white">PPEs</a>
             </button>
@@ -261,9 +269,9 @@
         </div>
 
         <!--Search for products-->
-        <form class="row row-content offset-2 my-5">
-            <input type="search" class="form-control col-8">
-            <button type="submit" class="col-2 col-sm-2 btn btn-light">Search</button>
+        <form class="row row-content justify-content-center my-5">
+            <input type="search" class="form-control col-6">
+            <button type="submit" class="col-2 col-sm-1 btn btn-light">Search</button>
         </form>
 
     </div>
