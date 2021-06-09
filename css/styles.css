@@ -16,6 +16,9 @@ h2 {
     font-family: 'Lobster', cursive;
 }
 
+h4 {
+    font-family: 'Lobster', cursive;
+}
 .carousel .btn {
     position: absolute;
     left: 45%;
@@ -26,6 +29,10 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 #uploadPrescription {
+    background-color: rgba(109, 207, 135, 0.5);
+}
+
+.card-header {
     background-color: rgba(109, 207, 135, 0.5);
 }
 

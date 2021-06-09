@@ -27,14 +27,16 @@
                     <a href="#"><img src="images/white_logo_transparent_background.png"></a>
                 </div>
 
-                <div class="col-md-7 align-self-center d-flex justify-content-center justify-content-md-start" id="divi">
+                <div class="col-md-7 align-self-center d-flex justify-content-center justify-content-md-start"
+                    id="divi">
                     <h1>Dividend Pharmacy</h1>
                 </div>
 
                 <div class="col-md-3 align-self-end d-flex justify-content-center d-md-block">
                     <a href="tel:555-555-5555" class="text-white"><i class="fa fa-phone"></i>:555-555-5555</a>
                     </br>
-                    <a href="mailto:dividendpharma@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>:dividendpharma</a>
+                    <a href="mailto:dividendpharma@gmail.com" class="text-white"><i
+                            class="fa fa-envelope-o"></i>:dividendpharma</a>
                 </div>
             </div>
         </div>
@@ -49,16 +51,12 @@
             <div class="collapse navbar-collapse" id="dividendNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Our Partners</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Media Center</a></li>
                 </ul>
 
                 <div class="navbar-text ml-auto">
-                    <a type="button" href="signup.html">
-                        Sign up
-                    </a>
-                    |
                     <a type="button" data-toggle="modal" data-target="#loginModal">
                         Login
                     </a>
@@ -108,25 +106,81 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <h2 class="mt-3">About Us</h2>
-                <hr/>
+
+    <div class="container mt-3">
         <div class="row row-content">
             <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet aliquet nulla. Nulla sagittis venenatis erat a pharetra. Curabitur luctus tincidunt nisi nec imperdiet. Pellentesque ullamcorper nisi felis, a malesuada lacus volutpat at. Fusce vitae mattis sapien, aliquet dapibus turpis. Nulla sed felis vitae diam sagittis consequat. Ut eleifend molestie est, vel pharetra tortor.</p>
-
-                <p>Aenean pellentesque nisi mauris, et accumsan lorem molestie eget. Sed congue dolor faucibus, gravida velit at, egestas sapien. Pellentesque ultricies congue nisi ac venenatis. Mauris lobortis augue sit amet gravida dapibus. Etiam leo leo, placerat et dictum vitae, tincidunt sed turpis. Proin sed elementum sapien. Morbi semper, diam in condimentum venenatis, augue elit ornare ligula, vel ornare mi dolor eget enim. Duis a maximus orci. Curabitur laoreet auctor nisl quis malesuada.</p>
-            </div>
-            <div class="col-md-5">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="text-white">Our Address:</h2>
+                        <h2 class="text-white">Register with us</h2>
                     </div>
                     <div class="card-body">
-                        <h4>1 Okwenachala Road Ituku, Awgu LGA, Enugu state.</h4>
+                        <form>
+                            <div class="container">
+                                <div class="row row-content form-group">
+                                    <label for="title" class="col-sm-4 align-self-center d-flex justify-content-sm-end">Title:</label>
+                                    <select class="col-sm-4 form-control" name="title" id="title">
+                                        <option>Select your title</option>
+                                        <option>Mr.</option>
+                                        <option>Mrs.</option>
+                                        <option>Miss</option>
+                                        <option>Dr.</option>
+                                        <option>Prof.</option>
+                                    </select>
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label class="col-sm-4 align-self-center d-flex justify-content-sm-end" for="firstName">First name:</label>
+                                    <input class="col-sm-8 form-control" name="firstName" type="text" id="firstName">
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label for="lastName" class="col-sm-4 align-self-center d-flex justify-content-sm-end">Last Name:</label>
+                                    <input class="col-sm-8 form-control" name="lastName" id="lastName" type="text">
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label for="sex" class="col-sm-4 align-self-center d-flex justify-content-sm-end">Sex:</label>
+                                    <select class="col-sm-4 form-control" name="sex" id="sex">
+                                        <option>Select</option>
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label for="address" class="col-sm-4 d-flex justify-content-sm-end">Address:</label>
+                                    <textarea class="col-sm-8 form-control" type="text" rows="5" name="address" id="address" placeholder="Tell us where you live"></textarea>
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label for="phone" class="col-sm-4 align-self-center d-flex justify-content-sm-end">Phone:</label>
+                                    <input type="tel" class="col-sm-8 form-control" name="phone" id="phone">
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label for="email" class="col-sm-4 align-self-center d-flex justify-content-sm-end">Email:</label>
+                                    <input type="email" class="form-control col-sm-8" name="email" id="email">
+                                </div>
+                                <div class="row row-content form-group">
+                                    <label class="col-sm-4 align-self-center d-flex justify-content-sm-end">Password:</label>
+                                    <input type="password" class="col-sm-6 form-control" name="password" id="password">
+                                </div>
+                                <div class="row row-content form-group">
+                                    
+                                        <button type="reset" class="ml-auto mr-2 btn btn-light">Start over</button>
+                                    
+                                    
+                                        <button type="submit" class="mr-auto btn btn-success">Submit</button>
+                                    
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+                <div class="col-md-4 mx-auto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis pellentesque pretium. Fusce a felis in augue mattis laoreet sit amet ut lectus. Praesent magna mauris, fringilla in mollis ac, faucibus laoreet eros. Nullam mattis, urna et placerat accumsan, nulla tellus lobortis turpis, a dignissim justo ipsum nec est. Fusce posuere dolor in molestie feugiat. Praesent ut lacus consequat, varius justo vitae, mollis lorem. Nullam pellentesque vehicula euismod. Etiam aliquam ultrices orci id lacinia.
+
+                        Maecenas orci nisl, pellentesque nec eros at, vestibulum hendrerit diam. Cras hendrerit elit nisl, ut ultrices ex auctor ac. Mauris hendrerit, risus eu dignissim vestibulum, eros dolor rutrum ante, in efficitur orci dolor sit amet nisi. Aenean non luctus tellus. In in sagittis dolor. Duis a maximus ligula. Mauris in tristique libero, in finibus velit. Sed sollicitudin est a metus vulputate, in eleifend ex aliquet. Nulla eget ex vestibulum, auctor risus id, accumsan nisl. Duis facilisis enim vitae nibh facilisis accumsan.
+                        
+                        Integer commodo lorem ut ante facilisis, vitae ultrices felis sollicitudin. Quisque lobortis semper felis quis ornare. Vivamus eget vestibulum velit. Nulla iaculis arcu nec neque rhoncus imperdiet. Ut dapibus semper ligula ut rutrum. Praesent luctus turpis ligula, ut mollis nunc aliquam eu. Suspendisse sit amet fermentum lorem, sit amet dignissim mauris. In sollicitudin, nisl ac malesuada facilisis, turpis sem viverra sapien, ac cursus mi neque ac dui. In libero nibh, bibendum et metus sit amet, consectetur faucibus tellus. Etiam vel ultrices ipsum. Pellentesque nec dolor vel nisi viverra consectetur at nec metus.</p>
+                </div>
+            
         </div>
     </div>
 
@@ -134,15 +188,16 @@
         <div class="container-fluid">
             <div class="text-center">
                 <div>
-                    <a href="index.html" class="px-3">Home</a>
+                    <a href="#" class="px-3">Home</a>
                     |
-                    <a href="#" class="px-3">About</a>
+                    <a href="about.html" class="px-3">About</a>
                     |
                     <a href="#" class="px-3">Our partners</a>
                     |
                     <a href="#" class="px-3">Media center</a>
-                    <hr/>
+                    <hr />
                 </div>
+
                 <div>
                     <a class="btn btn-social-icon btn-facebook btn-sm" href="https://www.facebook.com"><i
                             class="fa fa-facebook"></i></a>
@@ -166,7 +221,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
     <!--Additional script code to be linked-->
     <script src="js/script.js"></script>
 
